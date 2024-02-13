@@ -1,2 +1,2 @@
-# cybulde-project-template
-A simple template for Cybulde project
+# cybulde-processing
+Applying data processing in the cyberbullying detection project.
