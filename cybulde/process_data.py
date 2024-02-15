@@ -7,8 +7,8 @@ from cybulde.utils.gcp_utils import access_secret_version
 def process_data(config: Config) -> None:
     print(config)
 
-    my_dummy_secret = access_secret_version("mlopsproject-413606", "dummy-secret")
-    print(f"{my_dummy_secret=}")
+    github_access_token = access_secret_version("mlopsproject-413606", "cybulde-data-github-access-token")
+    print(f"{github_access_token=}")
 
 if __name__ == "__main__":
     process_data()  # type: ignore
