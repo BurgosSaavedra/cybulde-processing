@@ -1,5 +1,6 @@
 from cybulde.config_schemas.config_schema import Config
 from cybulde.utils.config_utils import get_config
+from cybulde.utils.gcp_utils import access_secret_version
 
 
 @get_config(config_path="../configs", config_name="config")
