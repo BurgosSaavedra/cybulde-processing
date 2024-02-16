@@ -15,7 +15,7 @@ class GHCDatasetReaderConfig(DatasetReaderConfig):
     dev_split_ratio: float = MISSING
 
 @dataclass
-class DatasetReaderManagerConfig(DatasetReaderConfig):
+class DatasetReaderManagerConfig:
     _target_: str = "cybulde.data_processing.dataset_readers.DatasetReaderManager"
     dataset_readers: dict[str, DatasetReaderConfig] = MISSING
 

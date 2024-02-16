@@ -16,7 +16,6 @@ class DataProcessingConfig:
     github_access_token_secret_id: str = "cybulde-data-github-access-token"
 
     infrastructure: gcp_schema.GCPConfig = gcp_schema.GCPConfig()
-
     dataset_reader_manager: dataset_readers_schema.DatasetReaderManagerConfig = MISSING
 
 
