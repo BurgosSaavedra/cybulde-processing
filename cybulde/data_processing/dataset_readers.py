@@ -58,7 +58,7 @@ class DatasetReader(ABC):
 class GHCDatasetReader(DatasetReader):
     def __init__(self, dataset_dir: str, dataset_name: str, dev_split_ratio: float) -> None:
         super().__init__(dataset_dir, dataset_name)
-        self.dev_split_ratio = dev_split_ratio: float
+        self.dev_split_ratio = dev_split_ratio
 
     def _read_data(self) -> tuple[dd.core.DataFrame, dd.core.DataFrame, dd.core.DataFrame]:
         self.logger.info("Reading GHC dataset...")
