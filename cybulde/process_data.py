@@ -18,7 +18,7 @@ def process_data(config: DataProcessingConfig) -> None:
         github_access_token=github_access_token,
     )
 
-    dataset_reader_manager = instance(config.dataset_reader_manager)
+    dataset_reader_manager = instantiate(config.dataset_reader_manager)
 
     df = dataset_reader_manager.read_data()
 
